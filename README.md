@@ -1,12 +1,12 @@
-#Mise en production d’un site classique : mysql/php, serveur linux (debian) Apache. (stack LAMP).
+# Mise en production d’un site classique : mysql/php, serveur linux (debian) Apache. (stack LAMP).
 
 
-####Exemple avec le projet allocine, sur un serveur dédié. Hébergeur OVH
+#### Exemple avec le projet allocine, sur un serveur dédié. Hébergeur OVH
 
 
-##I - Base de données
+## I - Base de données
 
-###1 – Créer un utilisateur de base de données.
+### 1 – Créer un utilisateur de base de données.
 
 - En ligne de commande :
 
