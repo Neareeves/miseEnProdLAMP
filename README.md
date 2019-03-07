@@ -10,7 +10,7 @@
 
 - En ligne de commande :
 
-1. Se connecter au serveur en ssh : `ssh root@serveur.domain`
+1. Se connecter au serveur en ssh : `ssh root@serveur.domain` (ou avec Putty sous windows)
 2. Se connecter à MySQL : `sudo mysql -u root` si pas de mot de passe (connection en root "unix socket")
 ou `mysql -u root -p` si il y un mdp root
 3. Créer une base de données : ``CREATE DATABASE `allocine`; ``
@@ -32,7 +32,7 @@ ou `mysql -u root -p` si il y un mdp root
  - En ligne de commande :
 
 1. copier le .sql sur le serveur (filezilla ou en ligne de commande `scp /chemin/du/fichier.sql root@serveur.domain:/chemin/du/fichier.sql`)
-2. Se connecter à MySQL : `sudo mysql -u root` si pas de mot de passe (connection en root "unix socket")
+2. Se connecter à MySQL : `(sudo) mysql -u root` si pas de mot de passe (connection en root "unix socket")
 ou `mysql -u root -p` si il y un mdp root
 3. Se placer dans la base de données : `use allocine`
 4. Importer le fichier : `source /chemin/du/fichier.sql`
@@ -69,7 +69,7 @@ Le projet est maintenant accessible à l'adresse http://serveur.domain/nomDuProj
 
 ### 1 – Https avec lets'encrypt.
 
-Doc let'sencrypt : [https://certbot.eff.org/lets-encrypt/debianstretch-apache](https://certbot.eff.org/lets-encrypt/debianstretch-apache)
+Doc let's encrypt : [https://certbot.eff.org/lets-encrypt/debianstretch-apache](https://certbot.eff.org/lets-encrypt/debianstretch-apache)
 
 1. Installer certbot `(sudo) apt-get install certbot python-certbot-apache -t stretch-backports`
 2. Lancer certbot `certbot --apache`
@@ -110,7 +110,7 @@ Pour créer un sous-domaine du type allocine.domain.com :
 ```
     <VirtualHost *:80>
     	ServerName allocine.domain.com
-    	DocumentRoot /var/www/htmlnomDuProjet
+    	DocumentRoot /var/www/html/nomDuProjet
     </VirtualHost>
 ```
 5. Activer le site : `(sudo) a2ensite allocine.domain.com.conf`
